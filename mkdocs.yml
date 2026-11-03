@@ -1,0 +1,5 @@
+site_name: TaskHub Documentation
+nav:
+  - Overview: index.md
+  - Architecture: architecture.md
+docs_dir: docs

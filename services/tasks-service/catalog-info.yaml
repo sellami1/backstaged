@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: taskhub-tasks-service
+  description: Creates, retrieves, lists, and updates TaskHub tasks
+  tags:
+    - nodejs
+    - express
+    - microservice
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/guest
+  system: taskhub

@@ -1,0 +1,14 @@
+{
+  "name": "taskhub-tasks-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Task management microservice for TaskHub",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

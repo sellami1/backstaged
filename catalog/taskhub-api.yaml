@@ -1,0 +1,73 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: taskhub-http-api
+  description: HTTP API exposed by the TaskHub API Gateway
+  tags:
+    - rest
+    - openapi
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: user:default/guest
+  system: taskhub
+  definition: |
+    openapi: 3.0.3
+    info:
+      title: TaskHub API
+      version: 1.0.0
+      description: API exposed by the TaskHub gateway
+    servers:
+      - url: http://localhost:3000
+    paths:
+      /health:
+        get:
+          summary: Gateway health check
+          responses:
+            '200':
+              description: Gateway is healthy
+      /api/users:
+        get:
+          summary: List users
+          responses:
+            '200':
+              description: User collection
+        post:
+          summary: Create a user
+          requestBody:
+            required: true
+            content:
+              application/json:
+                schema:
+                  type: object
+                  required: [name, email]
+                  properties:
+                    name:
+                      type: string
+                    email:
+                      type: string
+                      format: email
+          responses:
+            '201':
+              description: User created
+      /api/tasks:
+        get:
+          summary: List tasks
+          responses:
+            '200':
+              description: Task collection
+        post:
+          summary: Create a task
+          requestBody:
+            required: true
+            content:
+              application/json:
+                schema:
+                  type: object
+                  required: [title]
+                  properties:
+                    title:
+                      type: string
+          responses:
+            '201':
+              description: Task created

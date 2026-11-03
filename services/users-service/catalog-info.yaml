@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: taskhub-users-service
+  description: Creates, retrieves, and lists TaskHub users
+  tags:
+    - nodejs
+    - express
+    - microservice
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/guest
+  system: taskhub

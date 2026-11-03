@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: taskhub
+  description: A simple task-management application built from independent Node.js services
+  tags:
+    - nodejs
+    - microservices
+    - docker
+spec:
+  owner: user:default/guest
