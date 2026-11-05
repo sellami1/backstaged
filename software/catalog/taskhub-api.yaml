@@ -9,7 +9,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: user:default/guest
+  owner: user:default/sellami1
   system: taskhub
   definition: |
     openapi: 3.0.3

@@ -12,7 +12,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: user:default/guest
+  owner: user:default/fatma
   system: taskhub
   providesApis:
     - taskhub-http-api

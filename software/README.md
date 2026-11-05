@@ -80,7 +80,7 @@ The catalog descriptors are included in this repository:
 - `services/users-service/catalog-info.yaml` — Users Service Component
 - `services/tasks-service/catalog-info.yaml` — Tasks Service Component
 
-After pushing the repository to GitHub, register each descriptor in Backstage using **Create → Register Existing Component** and its GitHub URL. The `user:default/guest` owner is a starter assumption; change it in these YAML files if your Backstage catalog uses a different owner entity.
+After pushing the repository to GitHub, register each descriptor in Backstage using **Create → Register Existing Component** and its GitHub URL. The `user:default/sellami1` owner is a starter assumption; change it in these YAML files if your Backstage catalog uses a different owner entity.
 
 ## Important first-version limitations
 
