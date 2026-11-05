@@ -16,13 +16,13 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: developer2
+  name: fatma
   description: Software developer
   annotations:
-    github.com/user-login: developer2
-    github.com/user-id: "SECOND_GITHUB_NODE_ID"
+    github.com/user-login: FatmaDhouib
+    github.com/user-id: 194549643
 spec:
   profile:
-    displayName: Developer Two
+    displayName: Fatma
   memberOf:
     - developers
