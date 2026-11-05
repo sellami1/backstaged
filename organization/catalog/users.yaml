@@ -1,0 +1,28 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sellami1
+  description: Platform owner and developer
+  annotations:
+    github.com/user-login: sellami1
+    github.com/user-id: "YOUR_GITHUB_NODE_ID"
+spec:
+  profile:
+    displayName: Sellami
+  memberOf:
+    - developers
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: developer2
+  description: Software developer
+  annotations:
+    github.com/user-login: developer2
+    github.com/user-id: "SECOND_GITHUB_NODE_ID"
+spec:
+  profile:
+    displayName: Developer Two
+  memberOf:
+    - developers
