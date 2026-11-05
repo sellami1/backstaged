@@ -6,7 +6,7 @@ metadata:
   description: Platform owner and developer
   annotations:
     github.com/user-login: sellami1
-    github.com/user-id: "YOUR_GITHUB_NODE_ID"
+    github.com/user-id: U_kgDOCYWCHA
 spec:
   profile:
     displayName: Sellami
