@@ -7,7 +7,7 @@ const usersUrl = process.env.USERS_SERVICE_URL || 'http://localhost:3001';
 const tasksUrl = process.env.TASKS_SERVICE_URL || 'http://localhost:3002';
 
 app.use(cors({
-  origin: 'https://https://homeserver.tail97fa24.ts.net:8443',
+  origin: '*',
 }));
 
 app.use(express.json());

@@ -7,6 +7,9 @@ metadata:
     - nodejs
     - express
     - api-gateway
+  links:
+    - url: https://github.com/sellami1/backstaged/blob/main/software/docs/index.md
+      title: TaskHub documentation
   annotations:
     backstage.io/techdocs-ref: dir:../../
 spec:
