@@ -18,7 +18,7 @@ spec:
       version: 1.0.0
       description: API exposed by the TaskHub gateway
     servers:
-      - url: http://localhost:3000
+      - url: https://homeserver.tail97fa24.ts.net:8443
     paths:
       /health:
         get:
