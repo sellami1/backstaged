@@ -1,9 +1,14 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 const port = Number(process.env.PORT || 3000);
 const usersUrl = process.env.USERS_SERVICE_URL || 'http://localhost:3001';
 const tasksUrl = process.env.TASKS_SERVICE_URL || 'http://localhost:3002';
+
+app.use(cors({
+  origin: 'https://https://homeserver.tail97fa24.ts.net:8443',
+}));
 
 app.use(express.json());
 
