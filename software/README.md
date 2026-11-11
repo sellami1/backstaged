@@ -82,6 +82,20 @@ The catalog descriptors are included in this repository:
 
 After pushing the repository to GitHub, register each descriptor in Backstage using **Create → Register Existing Component** and its GitHub URL. The `user:default/sellami1` owner is a starter assumption; change it in these YAML files if your Backstage catalog uses a different owner entity.
 
+## Node.js service golden path
+
+`templates/nodejs-service/template.yaml` is a Backstage Software Template for
+creating a containerized Node.js/Express service with a health endpoint,
+Dockerfile, and catalog descriptor. It prompts for the component name, owner,
+port, and GitHub repository, then publishes the repository and registers the
+component.
+
+Register the template descriptor in Backstage using **Create → Register
+Existing Component** and the path to
+`templates/nodejs-service/template.yaml` in this repository. The Scaffolder
+instance must have the `fetch:template`, `publish:github`, and `catalog:register`
+actions configured, plus GitHub credentials for publishing.
+
 ## Important first-version limitations
 
 - Services use in-memory arrays, not a database.
